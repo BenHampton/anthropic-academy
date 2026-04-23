@@ -1,11 +1,11 @@
 [
   {
-    "task": "Write a Python function that parses an AWS S3 bucket URI (e.g., 's3://my-bucket/path/to/file.txt') and returns a dictionary with keys 'bucket' and 'key'."
+    "task": "Write a Python function that validates an AWS S3 bucket name according to AWS naming rules (3-63 characters, lowercase letters, numbers, hyphens only, cannot start or end with hyphen)"
   },
   {
-    "task": "Create a JSON object representing an AWS IAM policy that allows read-only access to a specific S3 bucket named 'my-data-bucket'."
+    "task": "Create a JSON object representing an AWS IAM policy that allows read-only access to a specific S3 bucket named 'my-data-bucket'"
   },
   {
-    "task": "Write a regular expression that matches valid AWS EC2 instance IDs (format: i- followed by 17 alphanumeric characters)."
+    "task": "Write a regular expression that matches valid AWS ARN (Amazon Resource Name) formats, such as 'arn:aws:s3:::bucket-name' or 'arn:aws:iam::123456789012:user/username'"
   }
 ]
