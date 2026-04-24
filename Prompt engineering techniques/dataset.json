@@ -3,47 +3,48 @@
     "prompt_inputs": {
       "height": "180 cm",
       "weight": "72 kg",
-      "goal": "Marathon training with high carbohydrate intake and meal timing around a 2-hour morning run",
-      "restrictions": "Vegetarian, no nuts"
+      "goal": "Marathon training - high-endurance performance with carbohydrate loading and proper nutritional timing around a 2-hour morning run",
+      "restrictions": "None"
     },
     "solution_criteria": [
-      "Meal plan covers all meals for one day with carbohydrate-focused portions appropriate for marathon training",
-      "Includes pre-run and post-run meals with strategic timing around the 2-hour morning training session",
-      "All meals comply with vegetarian diet and nut-free restrictions",
-      "Plan is presented in compact, concise format suitable for quick reference"
+      "Meal plan contains exactly 3 meals and appropriate pre/during/post-workout nutrition timed around the morning run",
+      "Total daily caloric intake is appropriate for marathon training (approximately 3000-3500 calories for this athlete)",
+      "Carbohydrates comprise 55-65% of total calories with emphasis on complex carbs and strategic timing around training",
+      "Plan is presented in a compact, single-day format with clear meal times and portion sizes"
     ],
     "task_description": "Write a compact, consice 1 day meal plan for a single athlete",
-    "scenario": "Testing with a high-endurance athlete (marathon runner) requiring high carbohydrate intake and specific timing around training sessions"
+    "scenario": "Testing with a high-endurance athlete (marathon runner) requiring high calorie intake and carbohydrate loading with specific nutritional timing around training"
   },
   {
     "prompt_inputs": {
       "height": "180 cm",
       "weight": "85 kg",
-      "goal": "Muscle recovery and strength gains from weightlifting training",
+      "goal": "Maximize muscle recovery and growth through optimized protein distribution and meal timing for strength training",
       "restrictions": "None"
     },
     "solution_criteria": [
-      "Meal plan covers all 3 meals plus snacks for a single day",
-      "Distributes protein across meals (minimum 25-30g per meal) totaling ~1.7-2g per kg bodyweight",
-      "Includes iron, zinc, and magnesium-rich foods for muscle recovery and micronutrient support",
-      "Meals are practical, compact, and realistic for an athlete's daily schedule"
+      "Meal plan includes 4-5 meals distributed throughout the day with protein at each meal",
+      "Total daily protein intake meets or exceeds 1.6-2.2g per kg of body weight (136-187g)",
+      "Meals are timed around training for optimal recovery and performance",
+      "Plan is compact and presented in a clear, easy-to-follow format"
     ],
     "task_description": "Write a compact, consice 1 day meal plan for a single athlete",
-    "scenario": "Testing with a strength/power athlete (weightlifter) needing high protein distribution and adequate micronutrients for muscle recovery"
+    "scenario": "Testing with a strength/power athlete (weightlifter) requiring high protein intake and meal distribution optimized for muscle recovery and growth"
   },
   {
     "prompt_inputs": {
       "height": "178 cm",
       "weight": "72 kg",
-      "goal": "Build muscle and improve endurance for competitive cycling",
-      "restrictions": "Vegan diet, nut allergy, gluten-free"
+      "goal": "maintain performance energy and muscle recovery for soccer training and match play",
+      "restrictions": "vegan diet"
     },
     "solution_criteria": [
-      "Meal plan includes exactly 4 meals (breakfast, lunch, snack, dinner) that are vegan, nut-free, and gluten-free",
-      "Total daily calories and macronutrients are appropriate for a 72kg athlete with muscle-building and endurance goals",
-      "All meals are practical and quick to prepare within a single day"
+      "Includes 3+ meals/snacks with complete protein sources suitable for vegans",
+      "Provides adequate carbohydrates for soccer performance and recovery",
+      "Addresses key micronutrients (iron, B12, calcium) commonly deficient in vegan diets",
+      "Compact format presenting 1 day of meals in concise structure"
     ],
     "task_description": "Write a compact, consice 1 day meal plan for a single athlete",
-    "scenario": "Testing with an athlete with dietary restrictions (vegan/allergies) to verify the meal plan accommodates nutritional needs while adhering to constraints"
+    "scenario": "Testing with a sport-specific dietary constraint (vegan soccer player) requiring complete protein sources and micronutrient balance while maintaining performance energy levels"
   }
 ]
