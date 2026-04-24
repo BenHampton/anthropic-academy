@@ -1,0 +1,50 @@
+[
+  {
+    "prompt_inputs": {
+      "height": "180 cm",
+      "weight": "75 kg",
+      "goal": "Marathon training with a 20km long run scheduled for afternoon",
+      "restrictions": "Vegetarian, no dairy"
+    },
+    "solution_criteria": [
+      "Meal plan covers breakfast, lunch, dinner, and pre/post-workout snacks with appropriate timing around the afternoon long run",
+      "High carbohydrate content (55-65% of calories) to support endurance training and glycogen replenishment",
+      "All meals and snacks are vegetarian and dairy-free",
+      "Plan is compact and concise (fits within 1 day format without excessive detail)"
+    ],
+    "task_description": "Write a compact, consice 1 day meal plan for a single athlete",
+    "scenario": "Testing with a sport-specific athlete (e.g., marathon runner) requiring high carbohydrate intake and specific meal timing around training sessions"
+  },
+  {
+    "prompt_inputs": {
+      "height": "178 cm",
+      "weight": "82 kg",
+      "goal": "muscle gain and strength training",
+      "restrictions": "vegan, gluten-free, no soy products"
+    },
+    "solution_criteria": [
+      "Meal plan is exactly 1 day with all meals specified",
+      "Accommodates all dietary restrictions (vegan, gluten-free, no soy)",
+      "Provides adequate protein intake for muscle gain goal",
+      "Meals are compact and concise in presentation"
+    ],
+    "task_description": "Write a compact, consice 1 day meal plan for a single athlete",
+    "scenario": "Testing with an athlete having multiple dietary restrictions (e.g., vegan bodybuilder) to verify the plan accommodates both performance nutrition and ethical constraints"
+  },
+  {
+    "prompt_inputs": {
+      "height": "178 cm",
+      "weight": "75 kg",
+      "goal": "Maintain muscle mass while reducing to 71 kg for competition weigh-in in 3 days, then refuel for peak performance",
+      "restrictions": "No dairy, no processed foods, sodium-controlled"
+    },
+    "solution_criteria": [
+      "Meal plan is compact and fits within 1 day format",
+      "Total daily calories support gradual weight loss (approximately 1-1.5 kg reduction) while preserving muscle mass",
+      "All meals comply with stated dietary restrictions",
+      "Macronutrient distribution prioritizes adequate protein intake for muscle retention"
+    ],
+    "task_description": "Write a compact, consice 1 day meal plan for a single athlete",
+    "scenario": "Testing with a weight-class athlete (e.g., boxer) needing a calorie-controlled meal plan that maintains muscle while meeting strict daily weight targets"
+  }
+]

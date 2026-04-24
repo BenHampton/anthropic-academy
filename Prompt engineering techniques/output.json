@@ -1,0 +1,65 @@
+[
+  {
+    "output": "# Pre-Marathon Training Day Meal Plan\n\n## Morning (4-6 hours before run)\n\n**Substantial breakfast** to fuel the long run:\n- Oatmeal with banana, berries, and almond butter\n- Whole grain toast with avocado\n- Cup of herbal tea or coffee\n- ~600-700 calories, mostly carbs + some protein/fat\n\n## 1-2 Hours Before Run\n\n**Light snack** to top off energy:\n- Energy bar (oat-based or dates)\n- Or: banana with a spoonful of peanut butter\n- Water to hydrate\n\n## During 20km Run\n\n- **Water** every 3-4 km\n- **Sports drink** (electrolyte) if running >90 minutes\n- Consider energy gels/chews for the final 5km if needed\n\n## Within 30 Minutes Post-Run\n\n**Recovery snack** (carbs + protein):\n- Smoothie: plant-based protein powder, banana, berries, coconut milk\n- Or: hummus wrap with vegetables\n- ~300-400 calories\n\n## Evening Dinner\n\n**Balanced meal** for recovery:\n- Quinoa or pasta (carbs for glycogen replenishment)\n- Lentil or bean-based protein\n- Roasted vegetables\n- Olive oil for healthy fats\n\n## Daily Hydration\n- 2-3L water minimum, more on run day\n\nThis focuses on carbs for endurance, plant-based protein, and consistent hydration.",
+    "test_case": {
+      "prompt_inputs": {
+        "height": "180 cm",
+        "weight": "75 kg",
+        "goal": "Marathon training with a 20km long run scheduled for afternoon",
+        "restrictions": "Vegetarian, no dairy"
+      },
+      "solution_criteria": [
+        "Meal plan covers breakfast, lunch, dinner, and pre/post-workout snacks with appropriate timing around the afternoon long run",
+        "High carbohydrate content (55-65% of calories) to support endurance training and glycogen replenishment",
+        "All meals and snacks are vegetarian and dairy-free",
+        "Plan is compact and concise (fits within 1 day format without excessive detail)"
+      ],
+      "task_description": "Write a compact, consice 1 day meal plan for a single athlete",
+      "scenario": "Testing with a sport-specific athlete (e.g., marathon runner) requiring high carbohydrate intake and specific meal timing around training sessions"
+    },
+    "score": 2,
+    "reasoning": "The solution fails to meet all three mandatory requirements. While it provides good meal timing and structure around the workout, it completely omits: (1) a daily caloric total, (2) macronutrient breakdown with percentages or grams, and (3) a complete meal plan with lunch missing. The plan also lacks specific portions and measurements for most foods. Although the solution demonstrates solid understanding of endurance nutrition principles and respects dietary restrictions, the absence of critical quantitative information makes it incomplete against the mandatory criteria."
+  },
+  {
+    "output": "# Nutrition Plan for Muscle Gain & Strength Training\n\n## Caloric Intake\n- **Daily calories**: ~2,800-3,200 kcal (surplus for muscle growth)\n- **Protein**: 1.6-2.2g per kg = **130-180g daily** (critical for vegan athletes)\n\n## Protein Sources (Vegan & Gluten-Free)\n- **Legumes**: lentils, chickpeas, beans, peas\n- **Nuts & seeds**: almonds, peanuts, hemp seeds, pumpkin seeds, chia\n- **Grains**: quinoa, rice, millet, buckwheat, teff\n- **Vegan protein powder**: pea, rice, or hemp-based (check gluten-free certification)\n- **Nutritional yeast** (fortified with B12)\n\n## Meal Structure Example\n| Meal | Examples |\n|------|----------|\n| **Breakfast** | Oatmeal + almond butter + banana + hemp seeds |\n| **Snack 1** | Rice cakes + tahini |\n| **Lunch** | Quinoa + roasted chickpeas + vegetables + olive oil |\n| **Snack 2** | Nuts + fruit |\n| **Dinner** | Lentil pasta (gluten-free) + peanut sauce + veggies |\n| **Post-workout** | Protein shake + dried fruit |\n\n## Key Nutrients to Monitor\n- **Vitamin B12**: supplement (critical for vegans)\n- **Iron**: pair with vitamin C; consider supplement\n- **Omega-3s**: flax seeds, chia seeds, algae supplements\n- **Zinc**: seeds, legumes, nutritional yeast\n\n**Consult a dietitian** for personalized macros and micronutrient optimization.",
+    "test_case": {
+      "prompt_inputs": {
+        "height": "178 cm",
+        "weight": "82 kg",
+        "goal": "muscle gain and strength training",
+        "restrictions": "vegan, gluten-free, no soy products"
+      },
+      "solution_criteria": [
+        "Meal plan is exactly 1 day with all meals specified",
+        "Accommodates all dietary restrictions (vegan, gluten-free, no soy)",
+        "Provides adequate protein intake for muscle gain goal",
+        "Meals are compact and concise in presentation"
+      ],
+      "task_description": "Write a compact, consice 1 day meal plan for a single athlete",
+      "scenario": "Testing with an athlete having multiple dietary restrictions (e.g., vegan bodybuilder) to verify the plan accommodates both performance nutrition and ethical constraints"
+    },
+    "score": 3,
+    "reasoning": "The solution fails to meet mandatory requirements. While it provides general nutritional guidance and identifies appropriate caloric intake, it does not deliver an actual 1-day meal plan with specific meals, portions, and timing. The macronutrient breakdown is incomplete (only protein specified, no carb/fat percentages or grams). The meal structure table is a generic template, not a concrete daily plan. A user cannot follow this as a 1-day meal plan because they don't know exact portions, quantities, or when to eat each meal. The task explicitly requires 'meals with extra foods, portions, and timing' - none of which are provided with specificity."
+  },
+  {
+    "output": "# 3-Day Competition Prep Plan\n\n## Days 1-3: Weight Cut (75kg \u2192 71kg)\n\n### Daily Calorie Target\n**2,000-2,200 calories** (modest deficit to preserve muscle)\n\n### Macro Split\n- **Protein: 160-180g** (2.1-2.4g/kg) \u2014 critical for muscle retention\n- **Carbs: 150-180g** \u2014 maintain training intensity\n- **Fat: 55-65g** \u2014 hormone support\n\n---\n\n## Sample Daily Structure\n\n### Breakfast\n- 150g lean ground turkey + sweet potato (150g)\n- 2 eggs (whole)\n- Vegetables: spinach, tomatoes\n- *~500 cal, 35g protein*\n\n### Mid-Morning\n- 200g chicken breast + 100g white rice\n- *~400 cal, 45g protein*\n\n### Lunch\n- 150g lean beef + 150g white potato\n- Broccoli, carrots (olive oil drizzle)\n- *~450 cal, 40g protein*\n\n### Pre-Workout Snack (if training)\n- Banana + almond butter (1.5 tbsp)\n- *~250 cal, 8g protein*\n\n### Dinner\n- 180g salmon/white fish + sweet potato (100g)\n- Asparagus, peppers\n- *~400 cal, 42g protein*\n\n---\n\n## Key Tactics\n\n| Strategy | How |\n|----------|-----|\n| **Sodium** | Keep under 2,000mg; minimal salt last 24h |\n| **Hydration** | 3-4L water daily (cut last 4-6 hours only) |\n| **Fiber** | Moderate (avoid bloating) |\n| **Timing** | Front-load calories; light dinner |\n\n---\n\n## Post-Weigh-In Refuel (24-48 hours after)\n\n- Gradually increase calories to **3,000-3,200**\n- Add fast carbs: white rice, pasta, honey\n- Restore normal sodium\n- Light dairy-free protein shakes if needed\n\n**Does this align with your sport/training schedule?** Adjustments may be needed based on workout timing.",
+    "test_case": {
+      "prompt_inputs": {
+        "height": "178 cm",
+        "weight": "75 kg",
+        "goal": "Maintain muscle mass while reducing to 71 kg for competition weigh-in in 3 days, then refuel for peak performance",
+        "restrictions": "No dairy, no processed foods, sodium-controlled"
+      },
+      "solution_criteria": [
+        "Meal plan is compact and fits within 1 day format",
+        "Total daily calories support gradual weight loss (approximately 1-1.5 kg reduction) while preserving muscle mass",
+        "All meals comply with stated dietary restrictions",
+        "Macronutrient distribution prioritizes adequate protein intake for muscle retention"
+      ],
+      "task_description": "Write a compact, consice 1 day meal plan for a single athlete",
+      "scenario": "Testing with a weight-class athlete (e.g., boxer) needing a calorie-controlled meal plan that maintains muscle while meeting strict daily weight targets"
+    },
+    "score": 6,
+    "reasoning": "The solution meets all three mandatory requirements: it includes daily calorie totals, macronutrient breakdown, and meals with portions and timing. However, there is a critical structural issue: the task requests a compact 1-day meal plan, but the solution provides a 3-day framework. While the daily structure within Days 1-3 is consistent, this represents a misinterpretation of the core request. Additionally, the calorie deficit appears insufficient for the stated 4kg loss over 3 days (would require ~1,300 cal/day deficit, not 500-750). The solution is well-organized and practical, but fails to fully align with the task scope and weight loss mathematics."
+  }
+]
