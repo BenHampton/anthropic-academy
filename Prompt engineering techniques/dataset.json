@@ -1,50 +1,49 @@
 [
   {
     "prompt_inputs": {
+      "height": "178 cm",
+      "weight": "68 kg",
+      "goal": "Marathon training with focus on high carbohydrate intake and meal timing around 2-hour morning run",
+      "restrictions": "None"
+    },
+    "solution_criteria": [
+      "Meal plan covers full day with breakfast, pre-run meal, post-run meal, lunch, and dinner",
+      "Includes carbohydrate-focused meals with appropriate timing (pre-run fuel and post-run recovery within 30-60 minutes)",
+      "Meal plan is presented in compact, concise format suitable for quick reference"
+    ],
+    "task_description": "Write a compact, consice 1 day meal plan for a single athlete",
+    "scenario": "Testing with a endurance athlete (marathon runner) requiring high carbohydrate intake and specific timing around training sessions"
+  },
+  {
+    "prompt_inputs": {
       "height": "180 cm",
-      "weight": "75 kg",
-      "goal": "Marathon training with a 20km long run scheduled for afternoon",
-      "restrictions": "Vegetarian, no dairy"
+      "weight": "85 kg",
+      "goal": "Build muscle mass and increase strength through caloric surplus and high protein intake",
+      "restrictions": "None"
     },
     "solution_criteria": [
-      "Meal plan covers breakfast, lunch, dinner, and pre/post-workout snacks with appropriate timing around the afternoon long run",
-      "High carbohydrate content (55-65% of calories) to support endurance training and glycogen replenishment",
-      "All meals and snacks are vegetarian and dairy-free",
-      "Plan is compact and concise (fits within 1 day format without excessive detail)"
+      "Meal plan contains 4-5 meals distributed throughout the day",
+      "Total daily protein is at least 170g (2g per kg body weight)",
+      "Caloric surplus of 300-500 calories above maintenance for muscle building",
+      "Meals are practical and quick to prepare for an athlete's schedule"
     ],
     "task_description": "Write a compact, consice 1 day meal plan for a single athlete",
-    "scenario": "Testing with a sport-specific athlete (e.g., marathon runner) requiring high carbohydrate intake and specific meal timing around training sessions"
-  },
-  {
-    "prompt_inputs": {
-      "height": "178 cm",
-      "weight": "82 kg",
-      "goal": "muscle gain and strength training",
-      "restrictions": "vegan, gluten-free, no soy products"
-    },
-    "solution_criteria": [
-      "Meal plan is exactly 1 day with all meals specified",
-      "Accommodates all dietary restrictions (vegan, gluten-free, no soy)",
-      "Provides adequate protein intake for muscle gain goal",
-      "Meals are compact and concise in presentation"
-    ],
-    "task_description": "Write a compact, consice 1 day meal plan for a single athlete",
-    "scenario": "Testing with an athlete having multiple dietary restrictions (e.g., vegan bodybuilder) to verify the plan accommodates both performance nutrition and ethical constraints"
+    "scenario": "Testing with a strength/power athlete (weightlifter) needing high protein distribution and caloric surplus for muscle building"
   },
   {
     "prompt_inputs": {
       "height": "178 cm",
       "weight": "75 kg",
-      "goal": "Maintain muscle mass while reducing to 71 kg for competition weigh-in in 3 days, then refuel for peak performance",
-      "restrictions": "No dairy, no processed foods, sodium-controlled"
+      "goal": "Maintain weight while preparing for a boxing match in 3 days with optimal energy and strength",
+      "restrictions": "No dairy, no processed foods"
     },
     "solution_criteria": [
-      "Meal plan is compact and fits within 1 day format",
-      "Total daily calories support gradual weight loss (approximately 1-1.5 kg reduction) while preserving muscle mass",
-      "All meals comply with stated dietary restrictions",
-      "Macronutrient distribution prioritizes adequate protein intake for muscle retention"
+      "Meal plan contains exactly 3 meals with appropriate calorie distribution for weight maintenance (~2200-2400 kcal total)",
+      "All meals are dairy-free and unprocessed",
+      "Includes adequate protein (minimum 150g) for muscle preservation during weight management",
+      "Provides balanced macronutrients supporting athletic performance without excess water retention"
     ],
     "task_description": "Write a compact, consice 1 day meal plan for a single athlete",
-    "scenario": "Testing with a weight-class athlete (e.g., boxer) needing a calorie-controlled meal plan that maintains muscle while meeting strict daily weight targets"
+    "scenario": "Testing with a sport that requires weight management (boxer or wrestler) needing calorie control while maintaining performance nutrition"
   }
 ]
