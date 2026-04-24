@@ -1,11 +1,14 @@
 [
   {
-    "task": "Write a Python function that parses an AWS S3 bucket URI (s3://bucket-name/key/path) and returns a dictionary with separate 'bucket' and 'key' fields."
+    "task": "Parse an AWS S3 object key to extract the bucket name, folder path, and file name from a full S3 URI like 's3://my-bucket/folder/subfolder/file.txt'",
+    "format": "regex"
   },
   {
-    "task": "Create a JSON CloudFormation template snippet that defines an AWS IAM role with a trust relationship allowing EC2 instances to assume it."
+    "task": "Create a JSON CloudFormation template that defines an AWS Lambda function with basic execution role and environment variables",
+    "format": "json"
   },
   {
-    "task": "Write a regular expression that matches valid AWS ARN (Amazon Resource Name) formats, such as 'arn:aws:s3:::my-bucket' or 'arn:aws:iam::123456789012:role/MyRole'."
+    "task": "Write a Python function that takes an AWS IAM policy document as a JSON string and returns a list of all Resource ARNs mentioned in it",
+    "format": "python"
   }
 ]
