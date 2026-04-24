@@ -1,65 +1,54 @@
 [
   {
-    "output": "# One-Day Marathon Training Meal Plan\n\n**Athlete Profile:** 180 cm, 72 kg | No Restrictions | Marathon Endurance Training\n\n---\n\n## Daily Nutritional Targets\n- **Calories:** 3,200-3,400 kcal\n- **Protein:** 115-130g (1.6-1.8g/kg body weight)\n- **Carbohydrates:** 450-500g (6-7g/kg for high-endurance training)\n- **Fat:** 90-110g\n\n---\n\n## MEAL PLAN\n\n### **Pre-Run Breakfast (5:30 AM)** \u2014 550 kcal\n*Easily digestible carbs + minimal protein before 2-hour run*\n\n- White bread: 80g (2 slices)\n- Honey: 30g (2 tbsp)\n- Banana: 180g (1 large)\n- Black coffee or tea: 250ml\n\n**Macros:** Protein 10g | Carbs 120g | Fat 3g\n\n---\n\n### **During Run (7:30-9:30 AM)** \u2014 200 kcal\n*Fuel during 2-hour endurance session*\n\n- Sports drink (6% carbs): 500ml\n- Energy gel: 30g (1 packet)\n\n**Macros:** Protein 0g | Carbs 50g | Fat 0g\n\n---\n\n### **Post-Run Recovery Meal (10:00 AM)** \u2014 700 kcal\n*Rapid carb + protein replenishment within 30 minutes*\n\n- White rice: 250g (cooked)\n- Grilled chicken breast: 150g\n- Sweet corn: 100g\n- Olive oil: 10ml\n- Sea salt & black pepper: to taste\n\n**Macros:** Protein 42g | Carbs 85g | Fat 12g\n\n---\n\n### **Mid-Morning Snack (1:00 PM)** \u2014 380 kcal\n*Sustained energy + carb-loading*\n\n- Bagel: 85g (1 medium, plain)\n- Peanut butter: 25g (1.5 tbsp)\n- Orange juice: 250ml\n\n**Macros:** Protein 12g | Carbs 62g | Fat 9g\n\n---\n\n### **Lunch (3:30 PM)** \u2014 850 kcal\n*Balanced carb-loading meal*\n\n- Pasta (whole wheat): 250g (cooked)\n- Lean ground turkey: 130g (cooked)\n- Marinara sauce: 150g (low-fat)\n- Parmesan cheese: 15g (grated)\n- Green salad: 100g (mixed greens)\n- Olive oil dressing: 10ml\n\n**Macros:** Protein 38g | Carbs 105g | Fat 20g\n\n---\n\n### **Afternoon Snack (5:30 PM)** \u2014 320 kcal\n*Glycogen loading continuation*\n\n- Rice cakes: 40g (4 cakes)\n- Honey: 20g (1.5 tbsp)\n- Apple: 200g (1 large)\n- Low-fat yogurt: 150g (plain)\n\n**Macros:** Protein 8g | Carbs 72g | Fat 2g\n\n---\n\n### **Dinner (7:30 PM)** \u2014 400 kcal\n*Lighter meal for recovery & sleep quality*\n\n- Baked salmon: 120g\n- Sweet potato: 150g (baked)\n- Steamed broccoli: 150g\n- Lemon juice: 10ml\n\n**Macros:** Protein 25g | Carbs 35g | Fat 12g\n\n---\n\n## DAILY TOTALS\n| Nutrient | Amount | Target |\n|----------|--------|--------|\n| **Calories** | 3,400 | 3,200-3,400 \u2713 |\n| **Protein** | 135g | 115-130g \u2713 |\n| **Carbs** | 529g | 450-500g ",
+    "output": "```json\n[\n  \"Postcolonial theory\",\n  \"Western epistemological frameworks\",\n  \"Colonial narratives\",\n  \"Power dynamics\",\n  \"Knowledge production\",\n  \"Resistance and contestation\",\n  \"Subaltern subject\",\n  \"Colonial discourse\",\n  \"Agency and subjugation\",\n  \"Postcolonial condition\",\n  \"Hybridity\",\n  \"Colonial and indigenous cultural forms\",\n  \"Binary understandings of identity\",\n  \"Belonging\",\n  \"Marginalized communities\",\n  \"Meaning-making\",\n  \"Structures of domination\",\n  \"Alternative epistemologies\",\n  \"Indigenous philosophies\",\n  \"Oral traditions\"\n]\n```",
     "test_case": {
       "prompt_inputs": {
-        "height": "180 cm",
-        "weight": "72 kg",
-        "goal": "Marathon training - high-endurance performance with carbohydrate loading and proper nutritional timing around a 2-hour morning run",
-        "restrictions": "None"
+        "content": "Postcolonial theory fundamentally challenges the Western epistemological frameworks that have historically dominated academic discourse. Through examining the power dynamics inherent in colonial narratives, scholars like Said and Spivak interrogate how knowledge production itself becomes a site of resistance and contestation. The subaltern subject, positioned at the margins of colonial discourse, embodies the tensions between agency and subjugation that characterize the postcolonial condition. Furthermore, the concept of hybridity\u2014the blending of colonial and indigenous cultural forms\u2014complicates binary understandings of identity and belonging, revealing how marginalized communities negotiate meaning-making within structures of domination while simultaneously asserting alternative epistemologies rooted in indigenous philosophies and oral traditions."
       },
       "solution_criteria": [
-        "Meal plan contains exactly 3 meals and appropriate pre/during/post-workout nutrition timed around the morning run",
-        "Total daily caloric intake is appropriate for marathon training (approximately 3000-3500 calories for this athlete)",
-        "Carbohydrates comprise 55-65% of total calories with emphasis on complex carbs and strategic timing around training",
-        "Plan is presented in a compact, single-day format with clear meal times and portion sizes"
+        "Identifies abstract theoretical concepts (e.g., postcolonial theory, epistemological frameworks, hybridity)",
+        "Captures key philosophical arguments and scholarly references (e.g., power dynamics, resistance, subaltern subject)",
+        "Recognizes nuanced humanistic themes (e.g., identity, agency, cultural contestation, indigenous knowledge)",
+        "Extracts topics as a valid JSON array of strings without technical jargon misclassification"
       ],
-      "task_description": "Write a compact, consice 1 day meal plan for a single athlete",
-      "scenario": "Testing with a high-endurance athlete (marathon runner) requiring high calorie intake and carbohydrate loading with specific nutritional timing around training"
-    },
-    "score": 5,
-    "reasoning": "The solution provides comprehensive, well-structured nutrition guidance with excellent timing around the morning run and appropriate macronutrient targets. All mandatory requirements are technically met (daily total, macros, portions, timing). However, the primary criterion explicitly requires 'exactly 3 meals' with pre/during/post-workout nutrition. The solution provides 6 eating occasions (breakfast, during-run fuel, post-run meal, mid-morning snack, lunch, afternoon snack, dinner), which violates the structural requirement. While the nutritional content is sound and the carb loading strategy is appropriate, the format deviation from the stated criterion is a significant issue that cannot be overlooked."
-  },
-  {
-    "output": "# One-Day Meal Plan for Strength Training Athlete\n\n**Athlete Profile:** 180 cm, 85 kg | No restrictions | Strength Training - Muscle Recovery & Growth\n\n---\n\n## Daily Nutritional Targets\n- **Calories:** 3,200-3,400 kcal\n- **Protein:** 170-180g (2.0-2.1g/kg body weight for muscle growth)\n- **Carbohydrates:** 425-450g (5-5.3g/kg for strength training)\n- **Fat:** 100-110g\n\n---\n\n## MEAL PLAN\n\n### **Breakfast (7:00 AM)** \u2014 650 kcal\n*Pre-training fuel & muscle protein synthesis*\n\n- Whole wheat toast: 80g (2 slices)\n- Eggs: 3 large (180g)\n- Olive oil: 10ml (cooking)\n- Banana: 150g (1 large)\n- Greek yogurt: 100g (full-fat)\n- Honey: 15g (1 tbsp)\n\n**Macros:** Protein 28g | Carbs 65g | Fat 20g\n\n---\n\n### **Mid-Morning Snack (10:00 AM)** \u2014 320 kcal\n*Intra-training energy & amino acids*\n\n- Chicken breast: 120g (grilled, skinless)\n- White rice cakes: 50g (3 cakes)\n- Almond butter: 20g (1.5 tbsp)\n- Apple: 180g (1 medium)\n\n**Macros:** Protein 38g | Carbs 52g | Fat 8g\n\n---\n\n### **Lunch (1:30 PM)** \u2014 850 kcal\n*Post-training recovery meal - critical window*\n\n- Salmon fillet: 200g (baked)\n- White jasmine rice: 220g (cooked)\n- Broccoli: 150g (steamed)\n- Cherry tomatoes: 80g\n- Olive oil: 15ml (drizzle)\n- Lemon: 30g (juice & zest)\n\n**Macros:** Protein 48g | Carbs 95g | Fat 18g\n\n---\n\n### **Afternoon Snack (4:00 PM)** \u2014 380 kcal\n*Pre-evening training boost*\n\n- Whey protein shake:\n- Whey protein powder: 40g (isolate)\n- Whole milk: 300ml\n- Oats: 50g (dry)\n- Banana: 120g (3/4 large)\n- Peanut butter: 20g (1.5 tbsp)\n\n**Macros:** Protein 40g | Carbs 58g | Fat 12g\n\n---\n\n### **Dinner (7:30 PM)** \u2014 800 kcal\n*Evening recovery & overnight muscle repair*\n\n- Lean beef sirloin: 220g (grilled)\n- Sweet potato: 250g (baked)\n- Spinach salad: 120g (raw)\n- Bell pepper: 100g (mixed colors)\n- Olive oil: 12ml (dressing)\n- Garlic: 5g\n- Sea salt & black pepper: to taste\n\n**Macros:** Protein 52g | Carbs 95g | Fat 18g\n\n---\n\n### **Evening Snack (10:00 PM)** \u2014 300 kcal\n*Overnight muscle protein synthesis*\n\n- Cottage cheese (2%): 250g\n- Mixed berries: 120g (blueberries, raspberries)\n- Granola: 30g\n- Almonds (sliced): 20g\n\n**Macros:** Protein 32g | Carbs 38g | Fat 6g\n\n---\n\n## DAILY TOTALS\n| Nutrient | Amount | Target |\n|----------|--------|--------|\n| **Calories** | 3,300 | 3,200-3,400 \u2713 |\n| **Protein** | 238g | 170-180g \u2713\u2713 |\n| **Car",
-    "test_case": {
-      "prompt_inputs": {
-        "height": "180 cm",
-        "weight": "85 kg",
-        "goal": "Maximize muscle recovery and growth through optimized protein distribution and meal timing for strength training",
-        "restrictions": "None"
-      },
-      "solution_criteria": [
-        "Meal plan includes 4-5 meals distributed throughout the day with protein at each meal",
-        "Total daily protein intake meets or exceeds 1.6-2.2g per kg of body weight (136-187g)",
-        "Meals are timed around training for optimal recovery and performance",
-        "Plan is compact and presented in a clear, easy-to-follow format"
-      ],
-      "task_description": "Write a compact, consice 1 day meal plan for a single athlete",
-      "scenario": "Testing with a strength/power athlete (weightlifter) requiring high protein intake and meal distribution optimized for muscle recovery and growth"
-    },
-    "score": 7,
-    "reasoning": "The solution meets the mandatory requirements despite being truncated: it includes daily caloric total (3,300 kcal), macronutrient breakdowns (per meal and partial daily totals), and 6 meals with portions and timing. It exceeds secondary criteria by providing 238g protein (well above the 136-187g range) and distributing meals strategically around training. However, the incomplete final table and excessive protein recommendation (238g vs 170-180g target) represent notable deficiencies. The truncation is a technical failure that prevents full verification of all mandatory elements, though what is visible suggests compliance."
-  },
-  {
-    "output": "# One-Day Vegan Meal Plan for Soccer Athlete\n\n**Athlete Profile:** 178 cm, 72 kg | Vegan | Soccer Performance & Recovery\n\n---\n\n## Daily Nutritional Targets\n- **Calories:** 2,800-3,000 kcal\n- **Protein:** 120-130g (1.7g/kg body weight)\n- **Carbohydrates:** 375-400g (5-5.5g/kg for training days)\n- **Fat:** 80-90g\n\n---\n\n## MEAL PLAN\n\n### **Breakfast (7:00 AM)** \u2014 650 kcal\n*Pre-training fuel*\n\n- Oatmeal: 80g (dry)\n- Banana: 150g (1 large)\n- Almond butter: 32g (2.5 tbsp)\n- Plant-based milk (oat): 250ml\n- Ground flaxseed: 15g\n- Maple syrup: 10g\n\n**Macros:** Protein 18g | Carbs 85g | Fat 19g\n\n---\n\n### **Mid-Morning Snack (10:00 AM)** \u2014 310 kcal\n*During training window*\n\n- Medjool dates: 70g (5 pieces)\n- Raw almonds: 28g\n- Orange: 200g (1 large)\n\n**Macros:** Protein 9g | Carbs 48g | Fat 10g\n\n---\n\n### **Lunch (1:00 PM)** \u2014 780 kcal\n*Post-training recovery meal*\n\n- Quinoa: 210g (cooked)\n- Black beans: 160g (canned, drained)\n- Baby spinach: 100g (raw)\n- Cherry tomatoes: 80g\n- Cucumber: 100g\n- Tahini dressing: 22g (1.5 tbsp)\n- Olive oil: 12ml\n- Pumpkin seeds: 15g\n\n**Macros:** Protein 28g | Carbs 94g | Fat 18g\n\n---\n\n### **Afternoon Snack (4:00 PM)** \u2014 340 kcal\n*Before evening training*\n\n- Plant-based protein smoothie:\n  - Protein powder (pea/hemp blend): 30g\n  - Frozen mixed berries: 150g\n  - Almond milk: 200ml\n  - Granola: 45g\n  - Coconut shreds: 15g\n\n**Macros:** Protein 28g | Carbs 52g | Fat 9g\n\n---\n\n### **Dinner (7:00 PM)** \u2014 840 kcal\n*Evening recovery & repair*\n\n- Brown rice: 190g (cooked)\n- Extra-firm tofu: 220g (pan-fried in 12ml sesame oil)\n- Broccoli: 160g (steamed)\n- Bell pepper (red): 130g\n- Nutritional yeast: 12g (1.5 tbsp)\n- Garlic: 5g\n- Low-sodium tamari: 15ml\n- Sesame seeds: 10g\n\n**Macros:** Protein 34g | Carbs 95g | Fat 22g\n\n---\n\n## DAILY TOTALS\n| Nutrient | Amount | Target |\n|----------|--------|--------|\n| **Calories** | 2,920 | 2,800-3,000 \u2713 |\n| **Protein** | 127g | 120-130g \u2713 |\n| **Carbs** | 394g | 375-400g \u2713 |\n| **Fat** | 88g | 80-90g \u2713 |\n\n---\n\n## Performance Tips\n\n\u2705 **Hydration:** 3-4 liters water throughout day  \n\u2705 **Pre-match:** Eat 2-3 hours before; focus on easily digestible carbs + protein  \n\u2705 **Post-match:** Consume carbs + protein within 30-60 minutes for optimal recovery  \n\u2705 **Essential Supplements:** \n   - V",
-    "test_case": {
-      "prompt_inputs": {
-        "height": "178 cm",
-        "weight": "72 kg",
-        "goal": "maintain performance energy and muscle recovery for soccer training and match play",
-        "restrictions": "vegan diet"
-      },
-      "solution_criteria": [
-        "Includes 3+ meals/snacks with complete protein sources suitable for vegans",
-        "Provides adequate carbohydrates for soccer performance and recovery",
-        "Addresses key micronutrients (iron, B12, calcium) commonly deficient in vegan diets",
-        "Compact format presenting 1 day of meals in concise structure"
-      ],
-      "task_description": "Write a compact, consice 1 day meal plan for a single athlete",
-      "scenario": "Testing with a sport-specific dietary constraint (vegan soccer player) requiring complete protein sources and micronutrient balance while maintaining performance energy levels"
+      "task_description": "Ectract topicd of a passage of text from a scholarly article in JSON array of srtings",
+      "scenario": "Testing with a humanities passage containing abstract concepts and theoretical frameworks to verify the prompt can identify nuanced, non-technical topics like philosophical arguments, historical contexts, or literary themes"
     },
     "score": 8,
-    "reasoning": "The solution comprehensively meets all mandatory requirements with detailed daily totals (2,920 kcal), complete macro/micronutrient breakdowns, and 5 well-timed meals with precise portions. It successfully addresses vegan protein completeness through diverse sources (tofu, quinoa+beans, nuts, seeds, protein powder) and strategically incorporates micronutrient-dense foods. The format is compact and well-organized with clear timing for soccer training/recovery. However, the solution is incomplete\u2014it cuts off mid-sentence in the supplements section, leaving the guidance unfinished. While this doesn't violate the mandatory requirements (which are fully met), it represents a quality issue that prevents a perfect score. The solution otherwise demonstrates strong nutritional knowledge for vegan athletic performance."
+    "reasoning": "The solution fully satisfies all mandatory requirements: it is a valid JSON array of strings containing topics from the passage, with no extra commentary, and nothing but the JSON array in the response. It performs well against secondary criteria by identifying theoretical concepts, philosophical arguments, and humanistic themes. However, there are minor issues with topic granularity and some phrases that blur the line between topics and contextual descriptors. The extraction is thorough but could be slightly more refined in distinguishing between core topics and supporting concepts. These are minor deficiencies that do not violate mandatory requirements."
+  },
+  {
+    "output": "```json\n[\n  \"CRISPR-Cas9 gene editing\",\n  \"autophagy pathways\",\n  \"mammalian cells\",\n  \"hypoxic conditions\",\n  \"liquid chromatography-mass spectrometry\",\n  \"mTOR signaling\",\n  \"AMPK signaling\",\n  \"LC3-II conversion\",\n  \"ATG7 gene\",\n  \"immunofluorescence microscopy\",\n  \"ULK1\",\n  \"autophagosome formation\",\n  \"electron microscopy\",\n  \"double-membrane vesicle structures\",\n  \"lysosomal storage diseases\",\n  \"cancer cell proliferation\"\n]\n```",
+    "test_case": {
+      "prompt_inputs": {
+        "content": "This study investigates the role of CRISPR-Cas9 gene editing in modulating autophagy pathways within mammalian cells under hypoxic conditions. We employed liquid chromatography-mass spectrometry to quantify levels of mTOR and AMPK signaling intermediates, revealing a 3.2-fold increase in LC3-II conversion rates following targeted disruption of the ATG7 gene. Furthermore, our immunofluorescence microscopy analysis demonstrated that CRISPR-mediated knockdown of ULK1 resulted in impaired autophagosome formation, with electron microscopy confirming reduced double-membrane vesicle structures. These findings suggest that CRISPR-based therapeutic interventions targeting autophagy regulators may have significant implications for treating lysosomal storage diseases and cancer cell proliferation."
+      },
+      "solution_criteria": [
+        "Extracts distinct topics spanning molecular biology (CRISPR-Cas9, gene editing, autophagy), biochemistry (mTOR, AMPK, LC3-II), analytical methodology (LC-MS, immunofluorescence, electron microscopy), and cellular mechanisms (autophagosome formation, hypoxic conditions)",
+        "Avoids over-generalization by distinguishing between specific genes (ATG7, ULK1) and broader concepts (autophagy pathways, signaling intermediates)",
+        "Returns output as a valid JSON array of strings with no extraneous text or explanations"
+      ],
+      "task_description": "Ectract topicd of a passage of text from a scholarly article in JSON array of srtings",
+      "scenario": "Testing with a dense scientific abstract containing multiple domain-specific topics (biology, chemistry, methodology) to ensure the prompt correctly disambiguates and extracts distinct topics rather than over-generalizing"
+    },
+    "score": 9,
+    "reasoning": "The solution meets all mandatory requirements: it is a valid JSON array of strings containing topics from the article with no extraneous commentary. It also satisfies the secondary criteria by extracting distinct topics across multiple domains and avoiding over-generalization. The inclusion of 'mammalian cells' is a minor issue as it describes the experimental model rather than a research topic, but this is a borderline case. The extraction of individual signaling pathways is reasonable given their distinct roles in the findings. Overall, the solution demonstrates strong comprehension of the passage and appropriate topic extraction."
+  },
+  {
+    "output": "```json\n[\n  \"deep learning\",\n  \"artificial intelligence\",\n  \"neural networks\",\n  \"convolutional neural networks (CNNs)\",\n  \"image recognition\",\n  \"machine learning\",\n  \"natural language processing\",\n  \"transformer-based neural networks\",\n  \"computer vision\",\n  \"neural network optimization\",\n  \"backpropagation\",\n  \"gradient descent\"\n]\n```",
+    "test_case": {
+      "prompt_inputs": {
+        "content": "Recent advances in deep learning have revolutionized artificial intelligence applications across multiple domains. Neural networks, particularly convolutional neural networks (CNNs), have demonstrated exceptional performance in image recognition tasks, achieving 99.7% accuracy on standard benchmarks. Machine learning models leveraging these neural network architectures have also been successfully applied to natural language processing, where transformer-based neural networks have become the dominant approach. The intersection of machine learning and computer vision relies heavily on deep neural network optimization techniques, including backpropagation and gradient descent algorithms that enable efficient training of these complex neural architectures."
+      },
+      "solution_criteria": [
+        "Extracts all distinct topics without creating redundant entries for hierarchical relationships (e.g., 'neural networks' and 'machine learning' listed once each, not duplicated)",
+        "Returns output as a JSON array of strings",
+        "Includes primary topics: machine learning, neural networks, deep learning, image recognition, natural language processing, computer vision, and related concepts"
+      ],
+      "task_description": "Ectract topicd of a passage of text from a scholarly article in JSON array of srtings",
+      "scenario": "Testing with a short passage containing overlapping or hierarchical topics (e.g., 'machine learning' and 'neural networks') to verify the prompt handles topic granularity appropriately and doesn't create redundant entries"
+    },
+    "score": 10,
+    "reasoning": "The solution meets all mandatory requirements: it returns a valid JSON array of strings containing topics from the article with no extra commentary. It successfully identifies all primary topics specified in the criteria (machine learning, neural networks, deep learning, image recognition, natural language processing, computer vision) and includes related concepts. The extraction avoids redundancy by listing 'neural networks' once rather than repeating it across different contexts. While some entries like 'transformer-based neural networks' and 'convolutional neural networks (CNNs)' represent specialized subtypes rather than entirely distinct topics, they are legitimate topics mentioned in the passage and their inclusion demonstrates thorough extraction. The solution fully satisfies both mandatory and secondary criteria."
   }
 ]
