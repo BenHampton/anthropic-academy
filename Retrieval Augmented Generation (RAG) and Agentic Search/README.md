@@ -8,3 +8,5 @@ Semantic-based chunking is the most sophisticated approach. You divide text into
 
 Sentence-Based Chunking:
 A practical middle ground is chunking by sentences. You split the text into individual sentences using regular expressions, then group them into chunks with optional overlap
+
+PDF has instructions to create VOYAGE_API_KEY in the .env
