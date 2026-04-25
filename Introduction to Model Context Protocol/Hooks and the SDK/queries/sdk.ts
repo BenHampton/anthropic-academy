@@ -2,7 +2,7 @@
 // to "@anthropic-ai/claude-agent-sdk"
 import { query } from "@anthropic-ai/claude-agent-sdk";
 
-const prompt = "";
+const prompt = "Look for duplicate queries in the ./src/queries dir";
 
 for await (const message of query({
   prompt,
