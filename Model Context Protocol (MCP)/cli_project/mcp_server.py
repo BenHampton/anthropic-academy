@@ -14,8 +14,8 @@ docs = {
 }
 
 @mcp.tool(
-    name="readt_doc_contents",
-    descriptions="Read the contents of a document and return it as a string"
+    name="read_doc_contents",
+    description="Read the contents of a document and return it as a string."
 )
 def read_document(
     doc_id: str = Field(description="Id of the document to read")
@@ -23,11 +23,11 @@ def read_document(
     if doc_id not in docs:
         raise ValueError(f"Doc with id {doc_id} not found")
     
-    return docs(doc_id)
+    return docs[doc_id]
 
 @mcp.tool(
     name="edit_document",
-    descriptions="Edit a document by replacing a string in the document content with a new string"
+    description="Edit a document by replacing a string in the document content with a new string"
 )
 def edit_document(
     doc_id: str = Field(description="Id of the document that will be editable"),
