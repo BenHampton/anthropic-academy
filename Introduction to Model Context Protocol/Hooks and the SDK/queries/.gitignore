@@ -1,0 +1,5 @@
+node_modules
+post-log.json
+pre-log.json
+
+# .env the .env is not ignored here bc we are intentially testing a hook to not read the file. committing the file intentionally
