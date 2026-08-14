@@ -1,0 +1,221 @@
+/* ---------- shared message panel ---------- */
+
+.message {
+  display: grid;
+  place-items: center;
+  height: 100%;
+  padding: 24px;
+}
+
+.message__panel {
+  max-width: 34ch;
+  text-align: center;
+  background: var(--panel);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius);
+  padding: 28px 24px;
+  backdrop-filter: blur(12px);
+}
+
+.message__title {
+  margin: 0 0 8px;
+  font-size: 19px;
+  letter-spacing: -0.01em;
+}
+
+.message__body {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--muted);
+}
+
+.message__action {
+  margin-top: 20px;
+  padding: 11px 22px;
+  border: 0;
+  border-radius: 999px;
+  background: var(--accent);
+  color: #05202b;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.message__action:active {
+  transform: scale(0.97);
+}
+
+/* ---------- ar surface ---------- */
+
+.ar-view,
+.ar-view__stage {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+/*
+ * MindAR positions its <video> at z-index:-2. Without a stacking context here
+ * that negative index pushes the video behind the root element, where the body
+ * background paints straight over it and the camera feed never appears.
+ * `isolation` traps it in this subtree; the video still paints above this
+ * element's own background because negative-index children come after it.
+ */
+.ar-view__stage {
+  isolation: isolate;
+  background: #000;
+}
+
+/* MindAR injects the video and canvas here and sizes them itself */
+.ar-view__stage video,
+.ar-view__stage canvas {
+  position: absolute;
+  inset: 0;
+}
+
+.ar-view__overlay {
+  position: absolute;
+  inset: 0;
+  /* the overlay must never eat camera-region taps */
+  pointer-events: none;
+  padding: max(16px, env(safe-area-inset-top)) 16px max(16px, env(safe-area-inset-bottom));
+}
+
+.ar-view__loading {
+  display: grid;
+  place-items: center;
+  gap: 14px;
+  height: 100%;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.spinner {
+  width: 26px;
+  height: 26px;
+  border: 2px solid rgba(255, 255, 255, 0.18);
+  border-top-color: var(--accent);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ---------- scan hint ---------- */
+
+.scan-hint {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  align-content: center;
+  gap: 20px;
+  opacity: 0;
+  transition: opacity 240ms ease;
+}
+
+.scan-hint--visible {
+  opacity: 1;
+}
+
+.scan-hint__reticle {
+  width: min(58vw, 240px);
+  aspect-ratio: 66 / 115;
+  border: 2px dashed rgba(255, 255, 255, 0.42);
+  border-radius: 20px;
+  animation: breathe 2.4s ease-in-out infinite;
+}
+
+@keyframes breathe {
+  50% {
+    border-color: rgba(255, 255, 255, 0.16);
+  }
+}
+
+.scan-hint__label {
+  margin: 0;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.78);
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.6);
+}
+
+/* ---------- info card ---------- */
+
+.info-card {
+  position: absolute;
+  left: 16px;
+  right: 16px;
+  bottom: max(20px, env(safe-area-inset-bottom));
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  min-height: 74px;
+  padding: 14px 18px;
+  border-radius: var(--radius);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: var(--panel);
+  backdrop-filter: blur(14px);
+  opacity: 0;
+  transform: translateY(14px);
+  transition:
+    opacity 200ms ease,
+    transform 200ms ease;
+}
+
+.info-card--visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.info-card__swatch {
+  width: 6px;
+  align-self: stretch;
+  border-radius: 3px;
+  flex: none;
+}
+
+.info-card__text {
+  flex: 1;
+  min-width: 0;
+}
+
+.info-card__name {
+  margin: 0;
+  font-size: 17px;
+  letter-spacing: -0.01em;
+}
+
+.info-card__flavour {
+  margin: 2px 0 0;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.info-card__stats {
+  display: flex;
+  gap: 16px;
+  margin: 0;
+  flex: none;
+}
+
+.info-card__stat {
+  text-align: right;
+}
+
+.info-card__stat dt {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+}
+
+.info-card__stat dd {
+  margin: 0;
+  font-size: 17px;
+  font-variant-numeric: tabular-nums;
+}
